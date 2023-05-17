@@ -4,8 +4,10 @@
 terraform {
 
   cloud {
+    organization = "hohic-test"
+
     workspaces {
-      name = "using-terraform-kubernetes-cluster"
+      name = "learn-terraform-github-action"
     }
   }
 
