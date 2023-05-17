@@ -5,11 +5,6 @@ provider "aws" {
   region = var.region
 }
 
-provider "tfe" {
-  token    = var.token
-  version  = "~> 0.44.0"
-}
-
 data "aws_availability_zones" "available" {}
 
 locals {
