@@ -33,7 +33,12 @@ Github Secrets에 생성한 Terraform Cloud 토큰 값 저장
 aws eks --region $(terraform output -raw region) update-kubeconfig \
     --name $(terraform output -raw cluster_name)
 ```
-<img src="https://github.com/hahic/Using_Terraform_Kubernetes_Cluster/assets/31979193/35ba58cc-1057-4357-b5ec-a2a0ccffbcbd" width="90%" height="90%">
+```
+kubectl get pods --all-namespaces
+```
+
+<img src="https://github.com/hahic/Using_Terraform_Kubernetes_Cluster/assets/31979193/26d75dd1-7720-4e02-8226-56705c9b4133" width="90%" height="90%">
+<img src="https://github.com/hahic/Using_Terraform_Kubernetes_Cluster/assets/31979193/24a4fda5-02c9-4d1b-b61c-edf4dcd382a0" width="90%" height="90%">
 
 ## 참고 자료
 - [Terraform - AWS DOCUMENTATION](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
